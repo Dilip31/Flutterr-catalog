@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home_page.dart';
 
 void main() {
-  runApp(dealspeed());
+  runApp(const dealspeed());
 }
 
+// ignore: camel_case_types
 class dealspeed extends StatelessWidget {
   const dealspeed({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Material(
-            child: Center(child: Container(child: Text("welcome to my app")))));
+    return const MaterialApp(
+      home: home_page(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
