@@ -13,7 +13,7 @@ class home_page extends StatelessWidget {
       body: const Center(
         child: Text("welcome to my app"),
       ),
-      drawer: Drawer(), 
+      drawer: const Drawer(), 
     );
   }
 }

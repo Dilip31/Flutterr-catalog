@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home_page.dart';
 import 'package:flutter_catalog/pages/login.dart';
+import 'package:flutter_catalog/utils/routes.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const dealspeed());
@@ -14,15 +17,18 @@ class dealspeed extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.dark,
-      theme: ThemeData(primarySwatch: Colors.orange),
-      darkTheme: ThemeData(primarySwatch: Colors.green),
-      initialRoute: "/home",
-      routes: {
-        "/": ((context) => login()),
-        "/home": ((context) => const home_page()),
-        "/login": ((context) => login())
-      },
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
       debugShowCheckedModeBanner: false,
+      darkTheme: ThemeData(primarySwatch: Colors.green),
+      initialRoute: "/login",
+      routes: {
+        "/": ((context) => const login()),
+        Myroutesf.homeroute: ((context) => const home_page()),
+        Myroutesf.loginroute: ((context) => const login())
+      },
     );
   }
 }
