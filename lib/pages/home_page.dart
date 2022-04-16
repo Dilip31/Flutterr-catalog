@@ -9,12 +9,14 @@ class home_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("catalog app"),
+        title: Text(
+          "catalog app",
+        ),
       ),
       body: const Center(
         child: Text("welcome to my app"),
       ),
-      drawer: const Mydrawer(), 
+      drawer: const Mydrawer(),
     );
   }
 }
