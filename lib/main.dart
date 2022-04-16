@@ -22,7 +22,7 @@ class dealspeed extends StatelessWidget {
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData(primarySwatch: Colors.green),
+      darkTheme: ThemeData(primarySwatch: Colors.purple),
       initialRoute: "/login",
       routes: {
         "/": ((context) => const login()),

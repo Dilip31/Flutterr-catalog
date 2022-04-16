@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/widgets/widgets.dart';
 
 // ignore: camel_case_types
 class home_page extends StatelessWidget {
@@ -13,7 +14,7 @@ class home_page extends StatelessWidget {
       body: const Center(
         child: Text("welcome to my app"),
       ),
-      drawer: const Drawer(), 
+      drawer: const Mydrawer(), 
     );
   }
 }
